@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudranil Saha | Portfolio</title>
+  <style>
+    /* === Global Styles === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* === Header === */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    /* === Section Styling === */
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #333;
+      font-size: 2rem;
+    }
+
+    /* === About Section === */
+    .about p {
+      font-size: 1.1rem;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+
+    /* === Projects === */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.8rem;
+    }
+
+    /* === Contact Section === */
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 0.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #222;
+      color: #fff;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #444;
+    }
+
+    /* === Footer === */
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Rudranil Saha</h1>
+    <p>B.Tech IT Student @ Alliance University | Anekal, Bangalore</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Rudranil, a 19-year-old B.Tech IT student at Alliance University in Anekal, Bangalore. 
+      I’m passionate about learning new things, even if they take a lot of time and effort. 
+    </p>
+    <p>
+      Recently, I started working on a personal project — building a <strong>personalized AI</strong> using Python. 
+      When I began, I had zero idea about Python, but I jumped in and kept learning along the way. 
+      It’s far from perfect and still needs time, but I’m motivated to keep improving and exploring new technologies. 
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Personalized AI Assistant</h3>
+        <p>
+          A Python-based AI assistant designed for personal use. Still in progress, but it’s my first 
+          step into AI and programming. This project taught me persistence and the importance of learning by doing.
+        </p>
+      </div>
+      <!-- You can add more project cards here -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:nsaha4352@gmail.com">nsaha4352@gmail.com</a></p>
+    
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Rudranil Saha | Built with ❤️ and dedication
+  </footer>
+
+  <script>
+    // Small animation for header text
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector("header h1");
+      header.style.opacity = 0;
+      setTimeout(() => {
+        header.style.transition = "opacity 2s";
+        header.style.opacity = 1;
+      }, 300);
+    });
+  </script>
+</body>
+</html>
